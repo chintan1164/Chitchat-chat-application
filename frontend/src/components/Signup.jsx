@@ -1,4 +1,4 @@
-import axios, { Axios } from 'axios'
+${BASE_URL}import axios, { Axios } from 'axios'
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast';
@@ -57,7 +57,7 @@ const Signup = () => {
     setUser(updatedUser);
 
     try {
-      const res = await axios.post(`http://localhost:8000/api/v1/user/register`, updatedUser, {
+      const res = await axios.post(`${BASE_URL}/api/v1/user/register`, updatedUser, {
         headers: {
           'Content-Type': 'application/json'
         },
