@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast';
 import { BASE_URL } from '..'
 
-const signup = () => {
+const Signup = () => {
   const [user, setUser] = useState({
     fullName: "",
     userName: "",
@@ -152,4 +152,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup
