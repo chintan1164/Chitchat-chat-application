@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import toast from 'react-hot-toast';
 
-const signup = () => {
+const Signup = () => {
   const [user, setUser] = useState({
     fullName: "",
     userName: "",
@@ -151,4 +151,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup
