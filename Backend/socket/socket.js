@@ -6,7 +6,7 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: ['https://chitchat-bzts.onrender.com', 'http://localhost:3000'],
+        origin: ['https://chitchat-bzts.onrender.com', 'http://localhost:3000', 'https://chitchat-chat-application.vercel.app/'],
         methods: ['GET', 'POST'],
     },
 })
