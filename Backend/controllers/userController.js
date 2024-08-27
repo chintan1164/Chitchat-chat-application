@@ -47,8 +47,11 @@ export const register = async (req, res) => {
 };
 
 export const login = async (req, res) => {
+   console.log('req.body',req.body);
     try {
         const { userName, password } = req.body;
+
+        console.log('username,pass',userName,password);
 
         if (!userName || !password) {
             return res.status(400).json({ message: "All fields are required" })
