@@ -21,8 +21,8 @@ const Signup = () => {
   }
 
   const defaultProfileImages = {
-    male: 'default-male-profile.png',
-    female: 'default-female-profile.png',
+    male: 'https://i.ibb.co/7CVGK1h/Pngtree-business-male-icon-vector-4187852.png',
+    female: 'https://i.ibb.co/fdk5QJm/pngwing-com.png',
   };
 
   const convertImageToBase64 = (url) => {
