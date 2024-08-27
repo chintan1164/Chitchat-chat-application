@@ -127,22 +127,29 @@ export const getNewUser = async (req, res) => {
     try {
         const loggedInUserId = req.id;
 
+        console.log('loggedin user', loggedInUserId);
+        
         const conversations = await Conversation.find({
             participants: loggedInUserId
         }).select("participants");
 
+        console.log('conversations', conversations);
+        
         const userIdsInConversation = new Set();
         conversations.forEach(conversation => {
+            console.log('conversation', conversation);
             conversation.participants.forEach(userId => {
+                // console.log('conversation', conversations);
                 if (userId.toString() !== loggedInUserId) {
                     userIdsInConversation.add(userId.toString());
                 }
             });
         });
-
+        
         const newUsers = await User.find({
             _id: { $nin: Array.from(userIdsInConversation).concat(loggedInUserId) }
         }).select("-password");
+        console.log('newUser', newUsers);
 
         return res.status(200).json(newUsers);
     } catch (error) {
