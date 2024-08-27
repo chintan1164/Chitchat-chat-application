@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 const corsOption = {
-    origin: 'https://chitchat-bzts.onrender.com',
+    origin: ['http://localhost:3000'],
     credentials: true
 }
 
