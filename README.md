@@ -2,7 +2,9 @@
 
 Chitchat is a feature-rich chat application enabling real-time messaging, user profile management, and search functionalities. Built with React, Redux, Tailwind CSS, and Axios, it offers a seamless and responsive user experience.
 
-[![Chitchat Logo](https://github.com/chintan1164/Chitchat-chat-application/blob/main/frontend/public/ChitChat.png)](https://chitchat-chat-application.vercel.app/)
+<a href="https://chitchat-chat-application.vercel.app/">
+  <img src="https://github.com/chintan1164/Chitchat-chat-application/blob/main/frontend/public/ChitChat.png" alt="Chitchat Logo" width="200" />
+</a>
 
 ## Features
 
