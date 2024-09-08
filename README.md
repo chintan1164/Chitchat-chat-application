@@ -4,7 +4,7 @@ Chitchat is a feature-rich chat application enabling real-time messaging, user p
 
 <p align="center">
   <a href="https://chitchat-chat-application.vercel.app/">
-    <img src="https://github.com/chintan1164/Chitchat-chat-application/blob/main/frontend/public/ChitChat.png" alt="Chitchat Logo" width="200" />
+    <img src="https://github.com/chintan1164/Chitchat-chat-application/blob/main/frontend/public/ChitChat.png" alt="Chitchat Logo" width="180" />
   </a>
 </p>
 
